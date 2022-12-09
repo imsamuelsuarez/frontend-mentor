@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,400;9..144,700&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+
+  <style>
+    * 
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --dark-cyan: hsl(158, 36%, 37%);
+      --cream: hsl(30, 38%, 92%);
+      --very-dark-blue: hsl(212, 21%, 14%);
+      --dark-grayish-blue: hsl(228, 12%, 48%);
+      --white: hsl(0, 0%, 100%);
+      --lg: 16px;
+      --md: 14px;
+      --sm: 12px;
+    }
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container
+    {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--cream);
+    }
+
+    .card
+    {
+      display: flex;
+      width: 90%;
+      height: 650px;
+      max-width: 375px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      background-color: white;
+      
+    }
+
+    .card .card-information__container
+    {
+      position: relative;
+      width: 90%;
+      height: 60%;
+      display: flex;
+      margin-top: 32px;
+      gap: 18px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card .card-information__container .card-information__subtitle
+    {
+      font-family: 'Montserrat', serif;
+      position: absolute;
+      top:-10px;
+      left: -3px;
+      font-size: var(--lg);
+      color: var(--dark-grayish-blue);
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+    .card .card-information__container .card-information__title
+    {
+      font-size:36px;
+      font-weight: bold;
+      font-family: 'Fraunces', serif;
+      line-height: 35px;
+      color: var(--very-dark-blue)
+    }
+
+    .card-information__paragraph
+    {
+      font-size: var(--lg);
+      font-family: 'Montserrat', serif;
+      line-height: 25px;
+      color: var(--dark-grayish-blue)
+    }
+
+    .card-information__price
+    {
+      display: flex;
+      align-self: flex-start;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      font-family: 'Fraunces', serif;
+      color: var(--dark-cyan);
+      font-size: 42px;
+      font-weight: 700;
+    }
+    .card-information__price span
+    {
+      font-size: 18px;
+      font-weight: 400;
+      color:var(--dark-grayish-blue);
+      text-decoration: line-through;
+    }
+
+    .card-information__main-button
+    {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+      width: 100%;
+      height: 64px;
+      padding: 20px;
+      font-size: var(--lg);
+      font-weight: 700;
+      font-family: 'Montserrat', serif;
+      background-color: var(--dark-cyan);
+      color: var(--white);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .card-information__main-button span
+    {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      background: url(./images/icon-cart.svg) no-repeat center/cover;
+    }
+    .card figure
+    {
+      display: block;
+      width: 100%;
+      height: 250px;
+      background: url(./images/image-product-mobile.jpg) no-repeat center/cover;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <figure>
+     
+    </figure>
+    <div class="card-information__container">
+      <h2 class="card-information__subtitle">Perfume</h2>
+      <h1 class="card-information__title">  Gabrielle Essence Eau De Parfum</h1>
+      <p class="card-information__paragraph">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      <p class="card-information__price"> $149.99
+        <span>$169.99</span>
+      </p>
+
+      <div class="card-information__main-button"><span></span>Add to Cart</div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+  
+
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Samuel Suarez</a>.
+  </div>
+</body>
+</html>
